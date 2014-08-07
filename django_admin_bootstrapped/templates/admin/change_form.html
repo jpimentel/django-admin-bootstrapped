@@ -32,11 +32,7 @@
 
 {% block object-tools %}
 {% if change %}{% if not is_popup %}
-  <div class="object-tools-wrapper">
-    
-    <fieldset class="results-side-panel--fieldset clearfix">
-      <legend class="visuallyhidden">fields</legend>
-      <div class="fieldset-content">    
+    <div class="object-tools-wrapper">
         <ul class="nav nav-block nav-stacked">
         {% for fieldset in adminform %}
             <li><a href="#fieldset-{{ fieldset.name|slugify }}">{{ fieldset.name }}</a></li>
@@ -50,9 +46,6 @@
         {% endfor %}
         </ul>
     </div>
-    </fieldset>
-
-  </div>
 {% endif %}{% endif %}
 {% endblock %}
 
