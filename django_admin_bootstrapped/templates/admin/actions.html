@@ -13,10 +13,10 @@
                 </script>
                 <span class="action-counter clearfix" style="vertical-align:sub">{{ selection_note }}</span>
                 {% if cl.result_count != cl.result_list|length %}
-                <span class="all">{{ selection_note_all }}</span>
+                <span class="all" style="display:none;">{{ selection_note_all }}</span>
                 <p>
                 <span class="question" style="vertical-align:sub">
-                    <a class="btn" href="javascript:;" title="{% trans " Click here to select the objects across all pages " %}">{% blocktrans with cl.result_count as total_count %}Select all {{ total_count }} {{ module_name }}{% endblocktrans %}</a>
+                    <a class="" href="javascript:;" title="{% trans " Click here to select the objects across all pages " %}">{% blocktrans with cl.result_count as total_count %}Select all {{ total_count }} {{ module_name }}{% endblocktrans %}</a>
                 </span>
             </p>
                 <span class="clear" style="vertical-align:sub"><a class="btn" href="javascript:;">{% trans "Clear selection" %}</a>
